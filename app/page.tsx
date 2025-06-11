@@ -77,14 +77,17 @@ export default function Home() {
                 <Link href="#contato" className="text-sm font-medium transition-colors hover:text-[#60a5fa]">
                   Contato
                 </Link>
-                <Button
-                  size="sm"
-                  className="bg-gradient-to-r from-[#4f46e5] to-[#4338ca] hover:from-[#4338ca] hover:to-[#3730a3] text-white shadow-lg shadow-[#4f46e5]/20"
-                >
-                  Agendar Demonstração
-                </Button>
+<Link href="#contato">
+  <Button
+    size="sm"
+    className="bg-gradient-to-r from-[#4f46e5] to-[#4338ca] hover:from-[#4338ca] hover:to-[#3730a3] text-white shadow-lg shadow-[#4f46e5]/20"
+  >
+    Agendar Demonstração
+  </Button>
+</Link>
+
                 <div className="flex items-center space-x-4 ml-4">
-                  <Link href="#" className="text-[#94a3b8] hover:text-[#25D366] transition-colors">
+                  <Link href="https://api.whatsapp.com/send/?phone=5516997898401&text&type=phone_number&app_absent=0" className="text-[#94a3b8] hover:text-[#25D366] transition-colors">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="24"
@@ -101,7 +104,7 @@ export default function Home() {
                     </svg>
                     <span className="sr-only">WhatsApp</span>
                   </Link>
-                  <Link href="#" className="text-[#94a3b8] hover:text-[#60a5fa] transition-colors">
+                  <Link href="https://api.whatsapp.com/send/?phone=5516997898401&text&type=phone_number&app_absent=0" className="text-[#94a3b8] hover:text-[#60a5fa] transition-colors">
                     <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path
                         fillRule="evenodd"
@@ -111,26 +114,30 @@ export default function Home() {
                     </svg>
                     <span className="sr-only">Instagram</span>
                   </Link>
-                  <Link href="#" className="text-[#94a3b8] hover:text-[#60a5fa] transition-colors">
-                    <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      <path
-                        fillRule="evenodd"
-                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <span className="sr-only">LinkedIn</span>
-                  </Link>
-                  <Link href="#" className="text-[#94a3b8] hover:text-[#60a5fa] transition-colors">
-                    <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-                      <path
-                        fillRule="evenodd"
-                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z"
-                        clipRule="evenodd"
-                      />
-                    </svg>
-                    <span className="sr-only">Facebook</span>
-                  </Link>
+                {/* Instagram */}
+<Link href="https://www.instagram.com/gimb.app/" className="text-[#94a3b8] hover:text-[#60a5fa] transition-colors">
+  <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path fillRule="evenodd" d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" clipRule="evenodd"/>
+  </svg>
+  <span className="sr-only">Instagram</span>
+</Link>
+
+{/* LinkedIn */}
+<Link href="https://www.linkedin.com/company/gimb" className="text-[#94a3b8] hover:text-[#60a5fa] transition-colors">
+  <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path fillRule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" clipRule="evenodd"/>
+  </svg>
+  <span className="sr-only">LinkedIn</span>
+</Link>
+
+{/* Facebook */}
+<Link href="https://facebook.com/gimb" className="text-[#94a3b8] hover:text-[#60a5fa] transition-colors">
+  <svg className="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+    <path fillRule="evenodd" d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10zm-5-1h-2V9c0-.552.224-1 .5-1H17V5h-2.5C13.12 5 12 6.12 12 7.5V11H10v2h2v5h2v-5h1.5l.5-2z" clipRule="evenodd"/>
+  </svg>
+  <span className="sr-only">Facebook</span>
+</Link>
+
                 </div>
               </div>
             </nav>
@@ -232,12 +239,15 @@ export default function Home() {
             >
               Contato
             </Link>
-            <Button
-              size="sm"
-              className="w-full bg-gradient-to-r from-[#4f46e5] to-[#4338ca] hover:from-[#4338ca] hover:to-[#3730a3] text-white shadow-lg shadow-[#4f46e5]/20 mt-2"
-            >
-              Agendar Demonstração
-            </Button>
+            <Link href="#contato">
+  <Button
+    size="sm"
+    className="w-full bg-gradient-to-r from-[#4f46e5] to-[#4338ca] hover:from-[#4338ca] hover:to-[#3730a3] text-white shadow-lg shadow-[#4f46e5]/20 mt-2"
+  >
+    Agendar Demonstração
+  </Button>
+</Link>
+
           </div>
         </div>
       </header>
@@ -266,13 +276,16 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4">
-                  <Button
-                    size="lg"
-                    className="bg-gradient-to-r from-[#4f46e5] to-[#4338ca] hover:from-[#4338ca] hover:to-[#3730a3] text-white shadow-lg shadow-[#4f46e5]/20 cta-button"
-                  >
-                    Agendar Demonstração
-                    <ChevronRight className="ml-2 h-4 w-4" />
-                  </Button>
+                  <Link href="#contato">
+  <Button
+    size="lg"
+    className="bg-gradient-to-r from-[#4f46e5] to-[#4338ca] hover:from-[#4338ca] hover:to-[#3730a3] text-white shadow-lg shadow-[#4f46e5]/20 cta-button"
+  >
+    Agendar Demonstração
+    <ChevronRight className="ml-2 h-4 w-4" />
+  </Button>
+</Link>
+
                 </div>
               </div>
               <div className="flex items-center justify-center relative">
