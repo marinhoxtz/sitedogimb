@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button"
 import { CheckCircle, ChevronRight, Cpu, Database, Globe, Laptop, Shield, Zap, Phone } from "lucide-react"
 import { useEffect, useState } from "react"
 
-export default function Home() {
+export default function Home(): JSX.Element {
   const [currentImage, setCurrentImage] = useState(0)
   const images = ["/images/inspection-field.png", "/images/inspection-factory.png"]
 
