@@ -607,85 +607,49 @@ export default function Home() {
             </div>
 
             <div className="grid gap-6 py-6 md:grid-cols-3">
-              <Card className="bg-gradient-to-b from-[#0f172a] to-[#070b14] border-[#1e293b] text-white overflow-hidden relative shadow-xl shadow-[#4f46e5]/5">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#4f46e5]/5 to-transparent"></div>
-                <CardHeader className="relative z-10">
-                  <CardTitle className="text-white">Inspeção de Qualidade</CardTitle>
-                  <CardDescription className="text-[#94a3b8]">
-                    Ferramentas completas para padronização, execução e gestão de inspeções
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="relative z-10">
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center">
-                      <CheckCircle className="mr-2 h-4 w-4 text-[#60a5fa]" />
-                      Checklists personalizados
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="mr-2 h-4 w-4 text-[#60a5fa]" />
-                      Registro fotográfico
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="mr-2 h-4 w-4 text-[#60a5fa]" />
-                      Relatórios automáticos
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
 
-              <Card className="bg-gradient-to-b from-[#0f172a] to-[#070b14] border-[#1e293b] text-white overflow-hidden relative shadow-xl shadow-[#4f46e5]/5">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#4f46e5]/5 to-transparent"></div>
-                <CardHeader className="relative z-10">
-                  <CardTitle className="text-white">Gestão de Material Rodante</CardTitle>
-                  <CardDescription className="text-[#94a3b8]">
-                    Gerenciamento de máquinas que atuam com material rodante
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="relative z-10">
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center">
-                      <CheckCircle className="mr-2 h-4 w-4 text-[#60a5fa]" />
-                      Monitoramento detalhado
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="mr-2 h-4 w-4 text-[#60a5fa]" />
-                      Manutenções preventivas
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="mr-2 h-4 w-4 text-[#60a5fa]" />
-                      Alertas automáticos
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
+  {/* Bloco 1 — Inspeção de Qualidade */}
+  <div className="bg-gradient-to-b from-[#0f172a] to-[#070b14] border border-[#1e293b] text-white overflow-hidden relative shadow-xl shadow-[#4f46e5]/5 rounded-lg p-6">
+    <div className="absolute inset-0 bg-gradient-to-br from-[#4f46e5]/5 to-transparent"></div>
+    <div className="relative z-10">
+      <h3 className="text-lg font-bold text-white mb-2">Inspeção de Qualidade</h3>
+      <p className="text-[#94a3b8] mb-4">Ferramentas completas para padronização, execução e gestão de inspeções</p>
+      <ul className="space-y-2 text-sm">
+        <li className="flex items-center"><CheckCircle className="mr-2 h-4 w-4 text-[#60a5fa]" />Checklists personalizados</li>
+        <li className="flex items-center"><CheckCircle className="mr-2 h-4 w-4 text-[#60a5fa]" />Registro fotográfico</li>
+        <li className="flex items-center"><CheckCircle className="mr-2 h-4 w-4 text-[#60a5fa]" />Relatórios automáticos</li>
+      </ul>
+    </div>
+  </div>
 
-              <Card className="bg-gradient-to-b from-[#0f172a] to-[#070b14] border-[#1e293b] text-white overflow-hidden relative shadow-xl shadow-[#4f46e5]/5">
-                <div className="absolute inset-0 bg-gradient-to-br from-[#4f46e5]/5 to-transparent"></div>
-                <CardHeader className="relative z-10">
-                  <CardTitle className="text-white">Gestão de Pneus</CardTitle>
-                  <CardDescription className="text-[#94a3b8]">
-                    Controle eficiente de pneus de veículos leves e pesados
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="relative z-10">
-                  <ul className="space-y-2 text-sm">
-                    <li className="flex items-center">
-                      <CheckCircle className="mr-2 h-4 w-4 text-[#60a5fa]" />
-                      Monitoramento de vida útil
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="mr-2 h-4 w-4 text-[#60a5fa]" />
-                      Controle de calibragem
-                    </li>
-                    <li className="flex items-center">
-                      <CheckCircle className="mr-2 h-4 w-4 text-[#60a5fa]" />
-                      Análise de custo
-                    </li>
-                  </ul>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
+  {/* Bloco 2 — Gestão de Material Rodante */}
+  <div className="bg-gradient-to-b from-[#0f172a] to-[#070b14] border border-[#1e293b] text-white overflow-hidden relative shadow-xl shadow-[#4f46e5]/5 rounded-lg p-6">
+    <div className="absolute inset-0 bg-gradient-to-br from-[#4f46e5]/5 to-transparent"></div>
+    <div className="relative z-10">
+      <h3 className="text-lg font-bold text-white mb-2">Gestão de Material Rodante</h3>
+      <p className="text-[#94a3b8] mb-4">Gerenciamento de máquinas que atuam com material rodante</p>
+      <ul className="space-y-2 text-sm">
+        <li className="flex items-center"><CheckCircle className="mr-2 h-4 w-4 text-[#60a5fa]" />Monitoramento detalhado</li>
+        <li className="flex items-center"><CheckCircle className="mr-2 h-4 w-4 text-[#60a5fa]" />Manutenções preventivas</li>
+        <li className="flex items-center"><CheckCircle className="mr-2 h-4 w-4 text-[#60a5fa]" />Alertas automáticos</li>
+      </ul>
+    </div>
+  </div>
+
+{/* Bloco 3 – Gestão de Pneus */}
+<div className="bg-gradient-to-b ... p-6">
+  <div className="absolute inset-0 ..."></div>
+  <div className="relative z-10">
+    <h3 className="...">Gestão de Pneus</h3>
+    <p className="...">Controle eficiente de pneus de veículos leves e pesados</p>
+    <ul className="space-y-2 text-sm">
+      <li className="flex items-center"> ... </li>
+      <li className="flex items-center"> ... </li>
+      <li className="flex items-center"> ... </li>
+    </ul>
+  </div>
+</div>
+
         </section>
 
         {/* Diferenciais */}
